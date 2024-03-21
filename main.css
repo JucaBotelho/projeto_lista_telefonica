@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to left, #c3de84, #f2f2d3); /* Define o degradê de esquerda para direita */
+    padding-top: 100px;
+}
+
+header {
+    display: flex; /* Para que os elementos fiquem um ao lado do outro */
+    align-items: center; /* para que os elementos fiquem centralizados */
+    margin-bottom: 40px;
+}
+
+header img {
+    height: 38px; /* tamanho da imagem*/
+    margin-right: 16px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container {
+    position: relative;
+    max-width: 960px;
+    width: 100%; /* quer dizer que o container vai ocupar 100% até 960px, e centralizado */
+    margin: 0 auto; /* para centralizar na horizontal */
+}
+
+form {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 56px;
+}
+
+form input {
+    font-size: 22px;
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 8px;
+}
+
+form button {
+    background-color: rgb(6, 138, 6);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+table {
+    width: 100%; /* Fará com que a tabela ocupe 100% do container */
+}
+
+table th {
+    border-bottom: 2px solid black;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table td {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding: 8px 0;
+    text-align: center; 
+    font-size: 20px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,   /* Remover as setinhas de incremento do input number */
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.error-message {
+    background-color: rgb(167, 30, 30);
+    padding: 2px;
+    position: absolute;
+    bottom: -42px; /* Ajusta conforme necessário para o posicionamento vertical */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    display: none;
+}
+
+.input-formatado {
+    position: relative;
+}
